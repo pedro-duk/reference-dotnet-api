@@ -2,6 +2,16 @@
 
 - <b> Objective: </b> Development of a .NET 8 WebAPI using ASP.NET Core for a quick reference when building future projects and highlighting important framework features.
 
+## Project features
+- Code-first approach with EF Core Migrations;
+- Validation with data annotations;
+   - Custom data annotations;
+   - Implementation of IValidatableObject for complex validation logic;
+
+- Usage of global exception filters;
+- Usage of logging filters;
+- Custom Logging Providers.
+
 ## How to start a .NET 8 WebAPI project
 
 1. Make sure .NET 8 SDK is installed in your OS. Instructions can be found on the [Microsoft Downloads Page](https://dotnet.microsoft.com/en-us/download/dotnet/8.0);

@@ -2,11 +2,6 @@
 
 - <b> Objective: </b> Development of a .NET 8 WebAPI using ASP.NET Core for a quick reference when building future projects and highlighting important framework features.
 
-## Features of this project
-- Usage of 
-- Custom Validations;
-- Custom Filters.
-
 ## How to start a .NET 8 WebAPI project
 
 1. Make sure .NET 8 SDK is installed in your OS. Instructions can be found on the [Microsoft Downloads Page](https://dotnet.microsoft.com/en-us/download/dotnet/8.0);

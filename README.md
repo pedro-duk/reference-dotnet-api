@@ -4,6 +4,7 @@
 
 ## Project features
 - Code-first approach with EF Core Migrations;
+- Unit-of-work Design Pattern;
 - Validation with data annotations;
    - Custom data annotations;
    - Implementation of IValidatableObject for complex validation logic;

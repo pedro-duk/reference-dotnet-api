@@ -38,9 +38,10 @@ builder.Services.AddScoped<ApiLoggingFilter>();
 // AddScoped creates one instance per request. So we'll use the same instance of a repo and their parents inside a request!
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>(); // Links every usage of ICategoriaRepository to the concrete class CategoriaRepository
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>)); // AddScoped doesn't allow for generic arguments, so we'll need to add them like this
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-// AddScoped doesn't allow for generic arguments, so we'll add them as arguments
-builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
 builder.Logging.AddProvider(new CustomLoggerProvider(new CustomLoggerProviderConfiguration
 {
     LogLevel = LogLevel.Information

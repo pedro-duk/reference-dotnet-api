@@ -24,7 +24,7 @@ namespace APICatalogo.Repositories
         {
             // Obtains the Set corresponding to T on the database.
             //      Through this we can make any operation.
-            return _context.Set<T>().ToList();
+            return _context.Set<T>().AsNoTracking().ToList();
         }
 
         public T? Get(Expression<Func<T, bool>> predicate)
@@ -35,7 +35,6 @@ namespace APICatalogo.Repositories
         public T Create(T entity)
         {
             _context.Set<T>().Add(entity);
-            _context.SaveChanges();
             return entity;
         }
 
@@ -43,14 +42,12 @@ namespace APICatalogo.Repositories
         {
             _context.Set<T>().Update(entity); // This marks every column as updated, so EF Core generates a SQL to update every column.
             //_context.Entry(entity).State = EntityState.Modified;
-            _context.SaveChanges();
             return entity;
         }
 
         public T Delete(T entity)
         {
             _context.Set<T>().Remove(entity);
-            _context.SaveChanges();
             return entity;
         }
     }

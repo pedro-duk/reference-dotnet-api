@@ -8,6 +8,7 @@
    - Custom data annotations;
    - Implementation of IValidatableObject for complex validation logic;
 
+- Generic repositories for common CRUD operations;
 - Usage of global exception filters;
 - Usage of logging filters;
 - Custom Logging Providers.

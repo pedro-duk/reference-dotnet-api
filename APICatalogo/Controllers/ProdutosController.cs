@@ -18,7 +18,7 @@ public class ProdutosController : ControllerBase
         _repository = repository;
     }
 
-    [HttpGet("produtos/{id}")]
+    [HttpGet("categorias/{id}")]
     public ActionResult<IEnumerable<Produto>> GetProdutosCategoria(int id)
     {
         var produtos = _repository.GetProdutosPorCategoria(id);

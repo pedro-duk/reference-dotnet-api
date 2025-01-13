@@ -4,15 +4,12 @@
 
 ## Project features
 - Code-first approach with EF Core Migrations;
-- Unit-of-work Design Pattern;
-- Validation with data annotations;
-   - Custom data annotations;
-   - Implementation of IValidatableObject for complex validation logic;
-
-- Generic repositories for common CRUD operations;
+- Validation with data annotations (with custom annotations and complex validation logic);
+- Usage of Generic repositories for common CRUD operations;
+- Usage of Unit-of-work Pattern;
 - Usage of global exception filters;
 - Usage of logging filters;
-- Custom Logging Providers.
+- Usage of Custom Logging Providers.
 
 ## How to start a .NET 8 WebAPI project
 
